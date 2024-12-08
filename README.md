@@ -1,4 +1,4 @@
-Regras para o projeto.
+# Regras para o projeto.
 
 Você deverá criar apenas 1 tela.
 Mantenha o HTML separado do CSS em arquivos .html e .css, respectivamente.
