@@ -42,10 +42,10 @@
     <section id="home" class="home-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 d-flex align-items-center">
+                <div class="col-md-6 d-flex home">
                     <h1 class="display">Toda sua vida financeira em um só lugar</h1>
                 </div>
-                <div class="col-md-6">
+                <div class="imagem-home">
                     <img src="imgs/home-image.png" alt="imagem 01" class="img-fluid">
                 </div>
             </div>
@@ -55,7 +55,7 @@
     <section id="sobre" class="py-5 bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 alinhamento">
                     <h2 class="display-5">Sobre a Finance Gold</h2>
                     <p>A Finance Gold é uma fintech inovadora, desenvolvida para oferecer soluções eficientes e seguras para a gestão financeira no mercado de investimentos. Nosso objetivo é centralizar todas as informações financeiras em um único lugar, facilitando o acompanhamento e o controle de seus investimentos na bolsa de valores.</p>
                 </div>
@@ -68,8 +68,22 @@
             <div class="row">
                 <div class="col-12">
                     <h2 class="display-5">Contato</h2>
-                    <p>Entre em contato conosco...</p>
-                    <!-- Formulário de contato aqui -->
+                    <p>Entre em contato conosco:</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,0 +1,50 @@
+html {
+    background-color: #1E3A8A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #10B981;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #1E3A8A;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #1b2d57;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register-link a {
+    color: #1E3A8A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

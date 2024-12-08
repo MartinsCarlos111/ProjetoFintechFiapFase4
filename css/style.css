@@ -8,6 +8,15 @@
     background-color: #f8f9fa;
 }
 
+.alinhamento {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sobre {
+    background-color: #f8f9fa;
+}
+
 .home-section { /* Alterado para .home-section */
     position: relative; /* Necessário para o ::after funcionar */
     background-color: #1E3A8A;
@@ -19,7 +28,7 @@
 .home-section::after {
     content: '';
     position: absolute;
-    top: 0; /* Corrigido: top 0 */
+    top: 0; 
     left: 0;
     width: 100%;
     height: 100%;
@@ -27,10 +36,19 @@
     z-index: 0;
 }
 
-.home-section img {
-    width: 100%;
-    height: auto; /* Altura automática para manter a proporção */
-    object-fit: cover; /* Para cobrir toda a área da seção */
+.imagem-home {
+    width: 100vw; /* Ajusta a largura para 100% da largura da tela */
+    height: 100vh; /* Ajusta a altura para 100% da altura da tela */
+    display: flex; /* Ativa o modelo Flexbox */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
+    overflow: hidden; /* Evita que a imagem ultrapasse os limites */
+}
+
+.imagem-home img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do contêiner */
+    object-fit: cover; /* Ajusta a imagem para cobrir todo o contêiner, mantendo a proporção */
 }
 
 .display {
@@ -44,4 +62,16 @@
     font-family: 'Arial', sans-serif;
     font-weight: bold;
     z-index: 1;
+}
+
+p {
+    text-align: justify; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    font-weight: normal; 
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    letter-spacing: 0.5px; 
 }
